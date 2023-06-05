@@ -1,0 +1,169 @@
+@media (max-width: 768px) {
+	.navbar {
+		padding: 0;
+		margin: 0;
+
+		.brand {
+			margin: 0.5em;
+		}
+
+		.burger-icon {
+			display: block;
+			padding: 5px;
+			cursor: pointer;
+			z-index: 100;
+		}
+
+		.nav-links {
+			position: absolute;
+			display: flex;
+			top: 0;
+			left: 0;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(255, 255, 255, 0.65);
+			backdrop-filter: blur(10px);
+			transform: translateY(-100%);
+			transition: transform 0.5s ease;
+			z-index: 100;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+
+				li {
+					margin: 25px 0;
+
+					a {
+						padding: 1.5em 2.5em;
+						border-radius: 8px;
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+	.nav-links.mobile-menu {
+		transform: translateY(0%);
+	}
+	header {
+		.hero-text {
+			left: 30%;
+
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.aboutus {
+		.aboutus-container {
+			flex-direction: column;
+			padding: 0 3em;
+
+			.aboutus-img {
+				height: 250px;
+				width: 100%;
+			}
+			.aboutus-text {
+				margin-top: 1em;
+				margin-left: 0;
+			}
+		}
+	}
+
+	.adventure {
+		.adv-hero-text {
+			width: 80%;
+
+			h2 {
+				padding: 0.5em 0.5em;
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	.offerts {
+		.offerts-cards {
+			flex-direction: column;
+			margin: 3em 0;
+
+			.offerts-card {
+				margin: 1em 0;
+			}
+		}
+
+		.click-here {
+			display: block;
+			padding: 0.5em 0.5em;
+			margin: 1em auto;
+			width: 150px;
+			background-color: #2ade72;
+		}
+
+		.click-here:hover {
+			background-color: #26c967;
+		}
+
+		.click-here:hover::after {
+			width: 0%;
+		}
+	}
+
+	footer {
+		.footer-info {
+			padding: 2em 5em;
+			text-align: center;
+			justify-content: center;
+
+			.footer-lists {
+				display: none;
+			}
+		}
+
+		.footer-decor {
+			margin: 0;
+		}
+
+		.copy {
+			padding: 2em 0;
+		}
+	}
+
+	.contact-page {
+		.contact-form {
+			width: 100%;
+		}
+
+		.msg-status {
+			width: 290px;
+			height: 80px;
+			font-size: 1.8rem;
+		}
+	}
+
+	.contact-page {
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.map-area {
+			width: 100%;
+		}
+	}
+
+	.contact-page {
+		.msg-status {
+			.close-btn {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}

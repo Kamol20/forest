@@ -1,0 +1,42 @@
+@media (min-width: 992px) {
+	.navbar {
+		padding: 0 10em;
+		.brand {
+			font-size: 3.5rem;
+		}
+
+		.nav-links {
+			ul {
+				li {
+					a {
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	header {
+		.hero-img {
+			background-image: url('../../dist/img/jungle_big.jpg');
+		}
+
+		.hero-text {
+			left: 30%;
+
+			h1 {
+				font-size: 1.5rem;
+			}
+
+			p {
+				font-size: 2.5rem;
+			}
+		}
+	}
+
+	.adventure {
+		.adv-hero-img {
+			background-image: url('../../dist/img/girl_big.jpg');
+		}
+	}
+}
